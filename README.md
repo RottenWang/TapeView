@@ -50,4 +50,4 @@ void onMoneySetError();//数值设置有错误
 
 ### 感谢
 
-![朱凯老师的技术分享](http://hencoder.com/)
+[朱凯老师的技术分享](http://hencoder.com/)
