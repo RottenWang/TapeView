@@ -38,3 +38,16 @@ moneyColor          当前金额的颜色
 midLineColor        中线颜色
 
 titleColor          标题颜色
+
+
+3.数值改变时的监听
+setOnSelectedChangedListener(OnSelectedChangedListener onSelectedChangedListener)
+
+void onChanged(float money); //数值变化
+
+void onMoneySetError();//数值设置有错误
+
+
+### 感谢
+
+![朱凯老师的技术分享](http://hencoder.com/)
