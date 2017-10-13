@@ -371,7 +371,7 @@ public class TapeView extends View {
     }
 
     /**
-     * 金额变化回调的监听
+     * 数值变化回调的监听
      *
      * @param onSelectedChangedListener
      */
@@ -380,9 +380,9 @@ public class TapeView extends View {
     }
 
     public interface OnSelectedChangedListener {
-        void onChanged(float money); //金额变化
+        void onChanged(float money); //数值变化
 
-        void onMoneySetError();//金额设置有错误
+        void onMoneySetError();//数值设置有错误
     }
 
     /**
@@ -395,7 +395,7 @@ public class TapeView extends View {
     }
 
     /**
-     * 设置借款金额下方的金额的颜色
+     * 设置title下方的金额的颜色
      *
      * @param color
      */
@@ -417,7 +417,7 @@ public class TapeView extends View {
     }
 
     /**
-     * 设置刻度money
+     * 设置刻度值
      *
      * @param money
      */
@@ -434,15 +434,15 @@ public class TapeView extends View {
     /**
      * 设置各种数值 需要同时设置
      *
-     * @param deltaMoney           刻度  实际显示 是 刻度/10
-     * @param minMoney             最小的体重 实际显示 是 传值/10
-     * @param maxMoney             最大的体重 实际显示 是 传值/10
-     * @param startMoney           刻度的起始值  最小值为0
+     * @param delta           刻度  实际显示 是 刻度/10
+     * @param min             最小的体重 实际显示 是 传值/10
+     * @param max             最大的体重 实际显示 是 传值/10
+     * @param start           刻度的起始值  最小值为0
      * @param ranges               设置刻度范围
-     * @param defalutSelectedMoney 默认选中的金额  传 -1 {@link TapeView#DEFAULT_DIVIDE_VALUE}  则默认选中居中值 否则 则传具体的数值
+     * @param defalutSelected 默认选中的金额  传 -1 {@link TapeView#DEFAULT_DIVIDE_VALUE}  则默认选中居中值 否则 则传具体的数值
      */
-    public void setNumbers(int deltaMoney, int minMoney, int maxMoney, int startMoney, int ranges, int defalutSelectedMoney) {
-        setNumbers(deltaMoney, minMoney, maxMoney, startMoney, ranges, defalutSelectedMoney, false);
+    public void setNumbers(int delta, int min, int max, int start, int ranges, int defalutSelected) {
+        setNumbers(delta, min, max, start, ranges, defalutSelected, false);
     }
 
     private void setNumbers(int deltaMoney, int minMoney, int maxMoney, int startMoney, int ranges, int defalutSelectedMoney, boolean isInit) {
